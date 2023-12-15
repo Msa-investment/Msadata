@@ -1,0 +1,354 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+body{
+    background: #eee;
+    /* width: 100%; */
+}
+main{
+    margin-left: 300px;
+}
+aside{
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    width: 300px;
+    background: #fff;
+    /* flex-basis: 15%; */
+}
+.navigation{
+    padding: 20px 30px;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    /* width: 100vw; */
+}
+.navigation .profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 2px solid grey;
+
+}
+.profile .image{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    background: lightslategray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile .image span{
+    font-size: 30px;
+}
+.profile .welcome-name{
+    margin-left: 15px;
+}
+.profile .welcome-name .welcome{
+    font-size: 15px;
+    font-weight: 600;
+    color: blue;
+}
+.profile .welcome-name .name{
+    font-size: 17px;
+    font-weight: 600;
+}
+.nav-links{
+     padding-left: 30px;
+}
+.nav-links a {
+    /* display: block; */
+    text-decoration: none;
+    margin-left: 10px;
+    /*  */
+}
+.nav-links .link{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1px;
+    border-radius: 8px;
+    padding: 10px;
+    transition: .3s;
+   
+}
+
+.nav-links .link:hover{
+    background: blue;
+}
+
+.nav-links .link i{
+    font-size: 32px;
+}
+.nav-links .link a{
+    font-size: 22px;
+    color: black;
+}
+/* .nav-links #active{
+    background: lightslategrey
+} */
+.nav-links .link:active{
+    background: blue;
+}
+
+.aside-footer{
+    position: absolute;
+    /* background: lightslategray; */
+    bottom: 5px;
+    width: 100%;
+    height: 120px; 
+}
+.aside-footer .logout{
+    margin: 80px 20px;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    align-items: center;
+    /* cursor: pointer; */
+    padding: 8px;
+    transition: .3s;
+    /* border-radius: 7px; */
+    /* background: rgb(167, 187, 207); */
+}
+.aside-footer .logout p{
+    font-size: 15px;
+    /* border: 2px solid black; */
+    /* border-radius: 50%;
+    margin-right: 8px; */
+}
+/* .aside-footer .logout:hover{
+    background: rgb(89, 101, 113); */
+/* .log{
+    text-decoration: none;
+    padding: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .3s; 
+    border-radius: 7px;
+    color: black;
+} */
+/* .log:hover{
+    background: #eee;
+}
+.out{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    height: 30px;
+    width: 30px;
+    background: #eee;
+    border-radius: 50%;
+} 
+.out span{
+    font-size: 21px;
+    color: black;
+}
+
+ */
+
+.notification{
+    position: fixed;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background: #ffffff00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+    right: 10px;
+    z-index: 99;
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, .3); */
+}
+.notification span{
+    font-size: 26px;
+}
+/* .notification p{
+    position: absolute;
+    top: 20px;
+    right: 28px;
+    font-size: 10px;
+    font-weight: 600;
+    color: #fff;
+    background: red;
+    padding: 1.5px;
+    border-radius: 50%;
+} */
+main {
+   margin-top: 70px;
+}
+main .dashboard{
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    top: 0;
+    height: 80px;
+}
+main .dashboard .title{
+    padding: 20px 10px;
+}
+.actions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wallet{
+    width: 100%;
+    background: #fff;
+    margin: 65px 30px; 
+    border-radius: 7px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 20%);
+    padding: 20px;
+}
+.wallet .wallet-balance{
+    margin: 0 20px;
+    width: fit-content;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.wallet .wallet-balance h3{
+    color: blue;
+    font-size: 25px;
+}
+.wallet .wallet-balance h1{
+    color: #333;
+}
+.wallet .acc-date{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wallet .acc-det, .date{
+    text-align: center;
+}
+.wallet .date{
+    text-align: center;
+    font-size: xx-large;
+    padding-bottom: 70px;
+}
+.transfer-withdraw {
+    margin-left: 19px;
+    margin-right: 19px;
+}
+.transfer, .withdraw{
+    background: #fff;
+    color: #333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 20%);
+    border-radius: 7px;
+    cursor: pointer;
+    transition: .3s;
+
+}
+.transfer:hover, .withdraw:hover{
+    background: blue;
+}
+.transfer span, .withdraw span{
+    font-size: 36px;
+}
+.more-actions{
+
+}
+.more-actions .more{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.more-actions .more .menu{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 20%);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+.more-actions .more .menu span{
+    font-size: 25px;
+    font-weight: 600;
+}
+.more-actions .more .menu .direct{
+    font-weight: 600;
+    padding: 8px;
+}
+
+
+
+.transaction-history{
+    padding: 30px 30px;
+    margin-top: 30px;
+    background: #fff;
+    border-top-right-radius: 24px;
+    border-top-left-radius: 24px;
+}
+.transaction-history .transaction-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.transaction-history .transaction-head .head{
+    font-weight: 600;
+    font-size: 28px;
+}
+.transaction-history .transaction-head .recent{
+    font-size: 20px;
+    font-weight: 600;
+}
+.transaction-history .history{
+    margin-top: 15px;   
+}
+.transaction-history .history .detail:hover{
+    background: #eee;
+}
+.transaction-history .history .detail{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 7px;
+}
+.transaction-history .history .detail .sect .name-bank{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    width: 170px;
+}
+.transaction-history .history .detail .sect .name-bank .name{
+    font-size: 15px;
+    font-weight: 600;
+}
+.transaction-history .history .detail .sect .name-bank span{
+    font-size: 15px;
+    color: green;
+}
+.transaction-history .history .detail .sect .status{
+    font-size: 12px;
+    font-weight: 600;
+    color: green;
+    margin-top: 6px;
+}
+.transaction-history .history .detail .amount{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

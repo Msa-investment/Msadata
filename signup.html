@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="image/msadata.png" type="image/x-icon">
+</head>
+<body>  
+   <form action="" id="loginForm">          
+    <div class="SignUp">
+        <h2>Sign Up</h2>
+         <div class="main">
+            <input type="First Name" placeholder="First Name" id="firstname">
+            <input type="Last Name" placeholder="Last Name" id="firstname"> 
+         </div> 
+           <div class="second">
+               <input type="Email" placeholder="Email" id="email">
+            </div>
+            <div class="third">
+               <input type="Password" placeholder="Password" id="password">
+           </div>
+            <div class="fourth">
+               <input type="password" placeholder="confirm password" id="confirmpassword">
+            </div>
+               <input type="phone number" placeholder="Phone number" id="phonr-sa" >
+            <div class="sixth" style="display: flex;width: 100%;font-size: 13px;">
+               <input type="checkbox" name="Privacy" style="
+               margin: 0px -109px;
+             "> I accept the terms of use & privacy<br>
+            </div>
+          <div class="seventh">
+           <a href="login.html"><input class="Signup" type="submit" value="Sign up"></a>
+          </div>
+          <p style="text-align: center;color: black;"> Already have an account? <a href="login.html" style="color: rgb(77, 77, 231);">Login here</a></p>
+          <div class="socialmedia">
+            <i style="color: red; size: 300px;" class='bx bxl-google-plus'></i>
+            <i style="color: blue;" class='bx bxl-facebook-circle'></i>
+          </div>
+    </div> 
+   </form>
+    <script>
+      var form = document.getElementById("loginForm");
+      form.onsubmit = function (e){
+      e.preventDefault();
+      alert("signup form submited");
+      if(validateForm()){
+          window.location = "login.html";
+      }else{
+          alert("validation error");
+      }
+      }
+
+      function validateForm() {
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+
+        if (email === "") {
+          alert("Please enter your email.");
+          return false;
+        }
+
+        if (password === "") {
+          alert("Please enter your password.");
+          return false;
+        }
+
+        return true;
+      }
+    </script>    
+</body>
+</html>
